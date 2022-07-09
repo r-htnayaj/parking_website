@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" href="../css1/style.css">
+    <title>Login Page</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container{
+            max-width: 80%; 
+            padding: 34px; 
+            margin: auto;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-family: 'Sriracha', cursive;
+            font-size: 40px;
+        }
+
+        p{
+            font-size: 17px;
+            text-align: center;
+            font-family: 'Sriracha', cursive;
+        }
+
+        input, textarea{
+            
+            border: 2px solid black;
+            border-radius: 6px;
+            outline: none;
+            font-size: 16px;
+            width: 80%;
+            margin: 11px 0px;
+            padding: 7px;
+        }
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .btn1{
+            color: white;
+            background: rgb(212, 236, 74);
+            padding: 8px 12px;
+            font-size: 20px;
+            border: 2px solid white;
+            border-radius: 14px;
+            cursor: pointer;
+        }
+
+        .bg1{
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- ---------------------------------------------------------------------------------- -->
+
+    <!-- Navigation bar starts -->
+    <nav class="navbar h-nav">
+        <ul class="nav-list v-class">
+            <div class="logo"><img src="../img1/logo.jpg" alt="logo"></div>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html">About</a></li>
+            <li><a href="../index.html">Services</a></li>
+            <li><a href="../index.html">Contact Us</a></li>
+            <li><a href="../index.html">VIP Zone</a></li>
+        </ul>
+        <div class="rightNav v-class" style="width: 50%;">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    <!--  Navigation bar ends -->
+
+    <img class="bg1" src="../img1/bg.jpg" alt="parking image">
+    <div class="container">
+        <h1 style="color: white;">Thank You</h3> 
+        <p style="color: yellow; font-size: larger;" ><b>For submitting your details, You can take your vehicle from the given location...</b></p>
+        <div class="container">
+            <form method="post">
+                <textarea name="desc" id="desc" cols="30" rows="19" >
+                                                              DETAILS
+
+                           Date of parking                   :                 21/9/2021
+
+                           Name of Person                 :                 Anupam
+
+                                  Age                              :                    21
+
+                            Type of Vehicle                  :                    car  
+
+                    Parking Space Location            :             Pillar-11, B1 - 26
+
+                            Phone Number                  :            +91-7827431298
+
+                            Total Charge                      :                Rs. 80 
+
+
+                                        Congratulation, you can take your Vehicle !!!
+                </textarea>
+                <button class= "btn1" style="color: black;"> <a href="payment.html" style="text-decoration: none;">Make Payment</a>  </button>
+            </form>
+                
+        </div>
+        
+            
+    </div>
+
+</body>
+</html>
